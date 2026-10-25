@@ -40,7 +40,6 @@ class TextToImage:
             model,
             dtype=dtype,
             use_safetensors=True,
-            safety_checker=None,
         )
         pipe.enable_model_cpu_offload()
         self.pipe = pipe
